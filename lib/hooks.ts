@@ -7,16 +7,16 @@ export const useMe = () => {
   return {
     user: data,
     isLoading: !data && !error,
-    isError: error
+    isError: error,
   }
 }
 
 export const usePlaylist = () => {
-  const {data,error} = useSWR('/playlist', fetcher)
+  const { data, error } = useSWR("/playlist", fetcher)
 
   return {
     playlists: (data as any) || [],
     isLoading: !data && !error,
-    isError: error
+    isError: error,
   }
 }
