@@ -11,3 +11,8 @@ export const formatDate = (date: Date) => {
     day: "numeric",
   })
 }
+
+export const toFixedNumber = (num, digits) => {
+  const pow = Math.pow(10, digits)
+  return Math.round(num * pow) / pow
+}
