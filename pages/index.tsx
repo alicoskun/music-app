@@ -21,7 +21,7 @@ const Home = ({ artists }) => {
           <Text fontSize="2xl" fontWeight="bold">
             Top artist this month
           </Text>
-          <Text fontSize="md">only visible to toy</Text>
+          <Text fontSize="md">only visible to you</Text>
         </Box>
         <Flex>
           {artists.map((artist) => (
