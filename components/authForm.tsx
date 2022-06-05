@@ -35,7 +35,7 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
           <form onSubmit={handleSubmit}>
             <Input
               marginBottom="10px"
-              placeholder="email"
+              placeholder="user@test.com"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             />
